@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week3</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form action="/register" method="post">
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br />
+
+      <!-- Gender -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br />
+
+      <!-- Address -->
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea><br />
+
+      <!-- Telephone -->
+      <label for="telephone">Telephone:</label>
+      <input type="tel" id="telephone" name="telephone" required /><br />
+
+      <!-- Email Address -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <!-- Course -->
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" required /><br />
+
+      <!-- Buttons -->
+      <input type="submit" value="Register" />
+      <input
+        type="button"
+        value="Cancel"
+        onclick="window.location.href='/cancel'"
+      />
+    </form>
+  </body>
+</html>
